@@ -51,7 +51,7 @@
 						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
 						<Export-Package>com.packtpub.felix.bookshelf.service.tui</Export-Package>
 					</instructions>
-					<obrRepository>file:/home/drake/felixbook/releases</obrRepository>
+					<obrRepository>file:${env.RELEASES_PATH}</obrRepository>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -76,7 +76,7 @@
 		<!-- releases repo -->
 		<repository>
 			<id>repo-rel</id>
-			<url>file:/home/drake/felixbook/releases</url>
+			<url>file:${env.RELEASES_PATH}</url>
 		</repository>
 	</distributionManagement>
 

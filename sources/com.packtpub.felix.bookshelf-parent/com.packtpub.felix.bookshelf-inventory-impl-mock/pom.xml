@@ -65,7 +65,8 @@
 						</Export-Package>
 					</instructions>
 					<remoteOBR>repo-rel</remoteOBR>
-					<prefixUrl>file:/home/drake/felixbook/releases</prefixUrl>
+					<!--  <prefixUrl>file:/home/drake/felixbook/releases</prefixUrl> -->
+					<prefixUrl>file:${env.RELEASES_PATH}</prefixUrl>
 					<ignoreLock>true</ignoreLock>
 				</configuration>
 			</plugin>
@@ -91,7 +92,8 @@
 		<!-- releases repo -->
 		<repository>
 			<id>repo-rel</id>
-			<url>file:/home/drake/felixbook/releases</url>
+			<!--  <url>file:/home/drake/felixbook/releases/</url> -->
+			<url>file:${env.RELEASES_PATH}</url>
 		</repository>
 	</distributionManagement>
 </project>

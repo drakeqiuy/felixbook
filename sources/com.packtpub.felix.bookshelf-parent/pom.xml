@@ -81,7 +81,7 @@
 		<!-- releases repo -->
 		<repository>
 			<id>repo-rel</id>
-			<url>file:/home/drake/felixbook/releases/</url>
+			<url>file:${env.RELEASES_PATH}</url>
 		</repository>
 	</distributionManagement>
 
